@@ -6,11 +6,11 @@ const name = localStorage.getItem("user");
 
 const template = () => `
 <section class="dashboard">
-<img src="https://media.giphy.com/media/keTwQbbQwlNM2RNJsW/giphy.gif" alt="saludo">
+<h1>PLAY</h1>
 <h2>Bienvenido ${name}</h2>
 <div class="games">
-<button id="game1">POKEAPI</button>
-<button id="game2">GAME1</button>
+<button id="game1"></button>
+<button id="game2"></button>
 </div>
     </section>  
 

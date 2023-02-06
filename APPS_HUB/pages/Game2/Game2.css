@@ -6,13 +6,37 @@
     flex-direction: column;
     width: 100vw;
 }
+#playagain{
 
+    background: none;
+    font-size: 30px;
+    border: none;
+    margin-top: 15px;
+}
 .game2{
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  
+    
+   
+}
+.ppt{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.choose{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 }
 
 #goback-game2{
@@ -30,15 +54,6 @@
     }    
 
      
-#all-game2 > h2{
-
-        text-align: center;
-        font-size: 19px;
-        font-weight: lighter;
-        padding: 10px;
-        text-transform:uppercase;
-    }
-
 .head-game2{
 
     display: flex;
@@ -50,44 +65,122 @@
 }
 
 
-.player1-game2{
+.player1-game2, .player2-game2{
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
     
 }
 
-.result-game2{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 128px;
-}
 .result-game2 > button{
 
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    background:none;
+}
+
+.player1-game2 > button > img{
+    animation: bote 0.5s ease-in-out infinite;
+    transform-origin: center bottom;
+    
+}
+@keyframes bote{
+
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+}}
+.player2-game2 > button > img{
+    animation: bote 0.5s ease-in-out infinite;
+    transform-origin: center bottom;
+    
+}
+@keyframes bote{
+
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+}}
+
+
+.player1-game2 > button{
+
+    border: none;
+    width: 150px;
+    height: 100px;
+    background: none;
+      border: 2px solid black;
+    border-radius: 50%;
+    background-color: bisque;
+}
+.player1-game2 > button > img{
+
+    height: 40PX;
+    width: 40px;
 }
 
 .player2-game2 > button{
 
-width: 100px;
-height: 75px;
-}
-.player1-game2>button{
-width: 100px;
-height: 75px;
-}
-
-.winner-game2{
-
-    border: 3px solid black;
-    width: 250px;
+    border: none;
+    width: 150px;
     height: 100px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: bisque;
+}
+.player2-game2 > button > img{
+
+    height: 40PX;
+    width: 40px;
 }
 
+
+.result-game2 > button{
+
+    border: none;
+}
+
+#winner-game2{
+
+    position: fixed;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    animation: resize 1.5s ease-in-out infinite;
+}
+    
+    
+    @keyframes resize {
+        0%{
+            transform: scale(0.5);
+        }
+        50%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.5);
+        }
+    }
+
+@media (max-width:600px)  {
+    
+    #winner-game2{
+
+        font-size: 40px;
+    }
+}

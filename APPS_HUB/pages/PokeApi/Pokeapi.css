@@ -13,6 +13,25 @@
     
     
 }
+@media (max-width: 45rem) {
+    .head > h2 > img{
+
+        width: 250px;
+        margin-bottom: 3rem;
+    }
+    #pokemonInput{
+        display: none;
+    }
+    section > div > figure{
+
+        width: 100px;
+        height: auto;
+    }
+    #goback{
+
+        padding-right: 5rem;
+    }
+}
 #goback{
 
    margin-top: -100px;
@@ -37,31 +56,56 @@
     gap: 48px;
     width: 100vw;
     flex-wrap: wrap;
+
     
+}
+#botones> button{
+
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+#botones > button:hover{
+    transform: translateY(-10px);
 
 }
+
 
 .all{
 
     border: none;
+    background: none;
  
 }
 .all > img{
 
     width: 35px;
     height: 35px;
+    animation: bote 0.5s ease-in-out infinite;
+    transform-origin: center bottom;
+    
 }
+@keyframes bote{
+
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+}}
 input{
 
     background: none;
     color: black;
     font-size: 50px;
 }
-#botones > button{
 
-    background:none;
-    font-size: 20px;
-}
 
 #pokeapi{
 
@@ -164,6 +208,7 @@ transition: all 0.3s;
 
 .grass{
 background-color: rgb(9, 247, 21);
+
 }
 .grass > nav{
 background: rgb(11, 100, 2);
@@ -283,8 +328,66 @@ background-color: rgb(121, 244, 135);
 .fighting > section > h3{
                                                             background-color: #4fc4cf;
                                                         } 
-
-
+            .psychic{
+                                                            background-color: #ff5470;
+                                                            }
+        .psychic > nav{
+                                                            background: #fffffe;
+                                                                }
+        .psychic > section{
+                                                                background-color: #fde24f;
+                                                                }
+        .psychic > section > h3{
+                                                                    background-color: #00ebc7;
+                                                                } 
+.rock{
+                                                                    background-color: #9656a1;
+                                                                    }
+.rock > nav{
+                                                                    background: #ffc0ad;
+                                                                        }
+.rock > section{
+                                                                        background-color: #fde24f;
+                                                                        }
+.rock > section > h3{
+                                                                            background-color: #fff3ec;
+                                                                        } 
+                                                                        .ghost{
+                                                                            background-color: #ea01ff;
+                                                                            }
+        .ghost > nav{
+                                                                            background: #0443f3;
+                                                                                }
+        .ghost > section{
+                                                                                background-color: #f2ce05;
+                                                                                }
+        .ghost > section > h3{
+                                                                                    background-color: #fff3ec;
+                                                                                } 
+                                                                                .ice{
+                                                                                    background-color: #05b6bf;
+                                                                                    }
+                .ice > nav{
+                                                                                    background: #0534b5;
+                                                                                        }
+                .ice > section{
+                                                                                        background-color: #08069f;
+                                                                                        }
+                .ice > section > h3{
+                                                                                            background-color: #03f8e8;
+                                                                                        }
+                                                                                        .dragon{
+                                                                                            background-color: #fbef0a;
+                                                                                            }
+                        .dragon > nav{
+                                                                                            background: #fb0505;
+                                                                                                }
+                        .dragon > section{
+                                                                                                background-color: #c408ea;
+                                                                                                }
+                        .dragon > section > h3{
+                                                                                                    background-color: #f4efef;
+                                                                                                } 
 
 
 

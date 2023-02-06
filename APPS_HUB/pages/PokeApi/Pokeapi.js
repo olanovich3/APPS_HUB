@@ -52,9 +52,6 @@ const addEventListener = () => {
     document.querySelector("#pokemones").innerHTML = "";
     printPokemon(allPokemon);
   });
-  window.addEventListener("load", () => {
-    const bola = (document.querySelector("#loading").innerHTML = "");
-  });
 };
 
 const filterPokemon = (pokemon) => {
@@ -67,12 +64,15 @@ const filterPokemon = (pokemon) => {
 
 let pokemonCharacter = [];
 const getCharacters = async () => {
+  const spinner = document.querySelector("#loading");
+  spinner.style.display = "block";
   for (let i = 1; i <= 150; i++) {
     const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
     const json = await data.json();
     pokemonCharacter.push(json);
   }
   mapPokemon(pokemonCharacter);
+  spinner.style.display = "none";
 };
 
 const mapPokemon = (pokemonCharacter) => {
@@ -115,6 +115,8 @@ const createButton = () => {
   const button = document.querySelector("#botones");
   for (const iterator of types) {
     const btn = document.createElement("button");
+    const img = document.createElement("img");
+    btn.appendChild(img);
     btn.textContent = `${iterator}`;
     btn.classList.add(`${iterator}`);
     button.appendChild(btn);
@@ -135,5 +137,4 @@ export const printTemplate = () => {
   getCharacters();
   createButton();
   filterPokemon();
-  loader();
 };

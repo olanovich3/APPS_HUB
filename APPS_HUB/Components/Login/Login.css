@@ -24,6 +24,27 @@
     border: 10px solid black;
 }
 
+@media (max-width: 38.25rem){
+    .box{
+        width: 300px;
+        height: 200px;
+    }
+    .login > .box > h2{
+        font-size: 75px;
+    }
+    
+#loginInput{
+
+    font-size: 20px;
+}
+
+.login > .box > #loginBtn{
+
+    font-size: 20px;
+}
+
+}
+
 .box > h2{
 
     font-size: 200px;
@@ -38,3 +59,4 @@
 
  font-size: 50px;   
 }
+
