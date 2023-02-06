@@ -1,0 +1,29 @@
+header{
+
+height: 20vh;
+}
+
+header > nav{
+
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+header > nav > button{
+
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25%;
+    height: 100px;
+    width: 100px;
+}
+
+header > nav > button > img{
+
+    height: 100%;
+    width: 100%;
+}
+

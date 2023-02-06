@@ -1,0 +1,303 @@
+.head{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+}
+.head > h2{
+
+    margin-bottom: -5rem;
+    
+    
+}
+#goback{
+
+   margin-top: -100px;
+    background: none;
+    font-size: 60px;
+    border: none;
+
+}
+#goback > img{
+
+    width: 50px;
+    height: 50px;
+}
+#pokemonInput{
+    border: none;
+}
+#botones{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+
+}
+
+.all{
+
+    border: none;
+ 
+}
+.all > img{
+
+    width: 35px;
+    height: 35px;
+}
+input{
+
+    background: none;
+    color: black;
+    font-size: 50px;
+}
+#botones > button{
+
+    background:none;
+    font-size: 20px;
+}
+
+#pokeapi{
+
+    width: 100vw;
+}
+
+
+#pokemones{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-wrap: wrap;
+
+}
+
+#pokemones > figure{
+
+width: 300px;
+height: auto;
+margin: 2rem;
+padding: 10px;
+border-radius: 10px;
+transition: all 0.3s;
+
+
+}
+
+#pokemones > figure:hover{
+
+    transform: scale(1.3);
+}
+
+#pokemones > figure > nav{
+
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+
+} 
+
+#pokemones > figure > nav > img{
+
+    width: 200px;
+    height: 200px;
+}
+
+#pokemones > figure > section{
+
+   
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#pokemones > figure > section > h2{
+
+    text-align: center;
+    font-size: 19px;
+    font-weight: lighter;
+    padding: 10px;
+    text-transform:uppercase;
+}
+
+#pokemones > figure > section > h3{
+
+    padding: 7px;
+    border-radius: 5px;
+    width: 100px;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -75px;
+}
+.data > h4{
+
+    font-size: 20px;
+   
+}
+
+#loading{
+
+    position: relative;
+  text-align: center;
+  justify-content: center;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loading > img{
+    width: 70px;
+    height: 70px;
+
+}
+
+.grass{
+background-color: rgb(9, 247, 21);
+}
+.grass > nav{
+background: rgb(11, 100, 2);
+}
+.grass > section{
+background-color: rgb(6, 126, 18);
+}
+.grass > section > h3{
+background-color: rgb(121, 244, 135);
+}
+.fire{
+    background-color: rgb(247, 9, 9);
+    }
+.fire > nav{
+    background: rgb(183, 36, 36);
+    }
+.fire > section{
+    background-color: rgb(157, 45, 45);
+    }
+.fire > section > h3{
+    background-color: rgb(244, 121, 121);
+    }
+    .water{
+        background-color: rgb(9, 199, 247);
+        }
+    .water > nav{
+        background: rgb(36, 124, 183);
+        }
+    .water > section{
+        background-color: rgb(31, 104, 192);
+        }
+    .water > section > h3{
+        background-color: rgb(121, 244, 238);
+        }   
+.bug{
+    background-color: rgb(252, 162, 72);
+    }
+.bug > nav{
+    background: rgba(150, 95, 37, 0.666);
+        }
+.bug > section{
+        background-color: rgba(231, 120, 1, 0.799);
+        }
+.bug > section > h3{
+            background-color: rgba(245, 177, 131, 0.827);
+        }   
+        .normal{
+            background-color: rgb(255, 255, 255);
+            }
+        .normal > nav{
+            background: rgba(58, 51, 44, 0.24);
+                }
+        .normal > section{
+                background-color: rgba(85, 83, 81, 0.799);
+                }
+        .normal > section > h3{
+                    background-color: rgba(245, 177, 131, 0.827);
+                }         
+                
+.poison{
+                    background-color: rgb(193, 7, 250);
+                    }
+.poison > nav{
+                    background: rgb(66, 1, 66);
+                        }
+.poison > section{
+                        background-color: rgba(86, 20, 92, 0.799);
+                        }
+.poison > section > h3{
+                            background-color: rgba(232, 167, 245, 0.827);
+                        } 
+.electric{
+                            background-color: rgb(246, 250, 7);
+                            }
+.electric > nav{
+                            background: rgb(96, 104, 11);
+                                }
+.electric > section{
+                                background-color: rgba(180, 190, 86, 0.799);
+                                }
+.electric > section > h3{
+                                    background-color: rgba(244, 245, 167, 0.827);
+                                } 
+ .ground{
+                                    background-color: rgb(250, 7, 7);
+                                    }
+ .ground > nav{
+                                    background: rgb(82, 11, 104);
+                                        }
+.ground > section{
+                                        background-color: rgba(180, 190, 86, 0.799);
+                                        }
+.ground > section > h3{
+                                            background-color: rgba(240, 140, 140, 0.827);
+                                        } 
+.fairy{
+                                            background-color: #f582ae;
+                                            }
+.fairy > nav{
+                                            background: #172c66;
+                                                }
+.fairy > section{
+                                                background-color: #fef6e4;
+                                                }
+.fairy > section > h3{
+                                                    background-color: #8bd3dd;
+                                                } 
+.fighting{
+                                                    background-color: #fbdd74;
+                                                    }
+.fighting > nav{
+                                                    background: #f2eef5;
+                                                        }
+.fighting > section{
+                                                        background-color: #fef6e4;
+                                                        }
+.fighting > section > h3{
+                                                            background-color: #4fc4cf;
+                                                        } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

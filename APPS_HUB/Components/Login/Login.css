@@ -1,0 +1,40 @@
+
+.login{
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100vw;
+    height: 100%;
+}
+
+.box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    background-color: blanchedalmond;
+    gap: 32px;
+    border: 10px solid black;
+}
+
+.box > h2{
+
+    font-size: 200px;
+}
+
+#loginInput{
+
+    background-color: aliceblue;
+}
+
+#loginBtn{
+
+ font-size: 50px;   
+}
