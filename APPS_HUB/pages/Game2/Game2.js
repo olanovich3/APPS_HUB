@@ -63,7 +63,7 @@ const comparation = () => {
     (player1 == 2 && player2 == 1) ||
     (player1 == 3 && player2 == 2)
   ) {
-    document.querySelector("#winner-game2").innerHTML = "PLAYER 1 WINNER";
+    document.querySelector("#winner-game2").innerHTML = "PLAYER 1 WINS";
     player1 = [];
     player2 = [];
   } else if (
@@ -71,7 +71,7 @@ const comparation = () => {
     (player1 == 2 && player2 == 3) ||
     (player1 == 3 && player2 == 1)
   ) {
-    document.querySelector("#winner-game2").innerHTML = "PLAYER 2 WINNER";
+    document.querySelector("#winner-game2").innerHTML = "PLAYER 2 WINS";
     player1 = [];
     player2 = [];
   }

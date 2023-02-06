@@ -27,7 +27,15 @@ const addEventListener = () => {
   });
 };
 
+const remove = () => {
+  const removebtn = document.querySelector("#logout");
+  removebtn.style.display = "block";
+  const removeHome = document.querySelector("#goback-game2");
+  removeHome.style.display = "none";
+};
+
 export const printTemplate = () => {
   document.querySelector("main").innerHTML = template();
   addEventListener();
+  remove();
 };

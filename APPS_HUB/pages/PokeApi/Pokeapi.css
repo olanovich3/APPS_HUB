@@ -193,6 +193,7 @@ transition: all 0.3s;
   text-align: center;
   justify-content: center;
   animation: spin 1s linear infinite;
+  top: 100px;
 }
 
 @keyframes spin {

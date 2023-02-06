@@ -10,11 +10,14 @@
 
 body{
 
-  background-color: #6f9b82;
+  background-color: #dfd841;
   transition: all 0.5s ease-in-out;
 }
 button{
   cursor: pointer;
+}
+li{
+  list-style-type: none;
 }
 
 

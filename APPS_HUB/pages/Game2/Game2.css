@@ -161,7 +161,7 @@
     position: fixed;
     transform: translate(-50%, -50%);
     font-size: 100px;
-    animation: resize 1.5s ease-in-out infinite;
+    animation: resize 3s ease-in-out infinite;
 }
     
     
