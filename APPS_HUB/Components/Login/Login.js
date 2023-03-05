@@ -4,9 +4,11 @@ import { printTemplate as DashboardTemplate } from "../../pages/Dashboard/Dashbo
 const template = () => `
 <section class="login">
 <div class="box">
-<h2>LOGIN</h2>
+<h2>HELLO, PLEASE ENTER YOUR NAME</h2>
+<div class="logindiv">
 <input type="text" id="loginInput"/>
 <button id="loginBtn">Login</button>
+</div>
 </div>
 </section>
 `;
@@ -18,6 +20,8 @@ const addEventListener = () => {
     localStorage.setItem("user", loginInput.value);
     if (loginInput.value) {
       DashboardTemplate();
+    } else {
+      alert("Please, login");
     }
   });
 };
@@ -25,8 +29,6 @@ const addEventListener = () => {
 const remove = () => {
   const removebtn = document.querySelector("#logout");
   removebtn.style.display = "none";
-  const removeHome = document.querySelector("#goback-game2");
-  removeHome.style.display = "none";
 };
 
 export const printTemplate = () => {

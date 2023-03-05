@@ -84,38 +84,8 @@
     background:none;
 }
 
-.player1-game2 > button > img{
-    animation: bote 0.5s ease-in-out infinite;
-    transform-origin: center bottom;
-    
-}
-@keyframes bote{
 
-    0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-}}
-.player2-game2 > button > img{
-    animation: bote 0.5s ease-in-out infinite;
-    transform-origin: center bottom;
-    
-}
-@keyframes bote{
 
-    0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-}}
 
 
 .player1-game2 > button{

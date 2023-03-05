@@ -7,11 +7,11 @@ const template = () => `
 <h2><img src="https://res.cloudinary.com/dysog0ybg/image/upload/v1675674066/THC%20PROYECT/pokemon_escudo_hphpkk.png" alt="pokemon"/></h2>
 <input type="text" id="pokemonInput" placeholder="Where is my Pokemon?¿?¿"/>
 <nav id=botones>
-<button class="all"><img src="https://res.cloudinary.com/dysog0ybg/image/upload/v1675675977/THC%20PROYECT/pokebola_1_jgntyf.png" alt="home"/></button>
+<button class="all"><img src="https://res.cloudinary.com/dysog0ybg/image/upload/v1675675977/POKEAPI/pokebola_1_jgntyf.png" alt="home"/></button>
 </nav>
 
 <div id="loading">
-<img src="https://res.cloudinary.com/dysog0ybg/image/upload/v1675584618/THC%20PROYECT/pokebola_hvznxm.png" alt="pokeball"/>
+<img src="https://res.cloudinary.com/dysog0ybg/image/upload/v1675584618/POKEAPI/pokebola_hvznxm.png" alt="pokeball"/>
 </div>
 </nav>
 <section id="pokeapi">

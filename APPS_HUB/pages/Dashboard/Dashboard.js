@@ -6,8 +6,7 @@ const name = localStorage.getItem("user");
 
 const template = () => `
 <section class="dashboard">
-<h1>PLAY</h1>
-<h2>Bienvenido ${name}</h2>
+<h2>Welcome ${name}, it´s time to enjoy</h2>
 <div class="games">
 <button id="game1"></button>
 <button id="game2"></button>
@@ -30,8 +29,6 @@ const addEventListener = () => {
 const remove = () => {
   const removebtn = document.querySelector("#logout");
   removebtn.style.display = "block";
-  const removeHome = document.querySelector("#goback-game2");
-  removeHome.style.display = "none";
 };
 
 export const printTemplate = () => {

@@ -7,7 +7,6 @@ const template = () => `
 <button id="goback-game2"><img src="https://res.cloudinary.com/dysog0ybg/image/upload/v1675671053/THC%20PROYECT/hogar_xtqkys.png" alt="home"/></button>
 </nav>
 <section class="game2">
-<h2>ROCK PAPER OR SCISSORS</h2>
 <button id="playagain">PLAY AGAIN</button>
 
 <section class="ppt">
